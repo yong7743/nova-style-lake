@@ -1,0 +1,104 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-27T08:26:49.775Z",
+  "item": {
+    "title": "New Conversation"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "analysis",
+    "showHeader": true,
+    "theme": {
+      "mode": "light",
+      "accent": "default"
+    },
+    "layout": {
+      "right": {
+        "hidden": false,
+        "width": "340px",
+        "title": "Fell symbology",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "fell-color-controls",
+            "title": "Colour ramp"
+          }
+        ]
+      }
+    },
+    "widgets": [
+      {
+        "id": "default-home",
+        "type": "home",
+        "slot": "top-left",
+        "config": {}
+      },
+      {
+        "id": "default-scale-bar",
+        "type": "scaleBar",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "fell-color-ramp-control",
+        "label": "LakeDistrictFells colour ramp control",
+        "bundlePath": "./runtime/behaviors/fell-color-ramp-control-7d82fb2ef5fc4b2a.js",
+        "sourceSha256": "7d82fb2ef5fc4b2a6f97344082322b22d904fb375516bb8f20370d4459f41658",
+        "modulePaths": [],
+        "config": {
+          "layerId": "1a17c7892fa-layer-2"
+        },
+        "mounts": [
+          "fell-color-controls"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-10-27T08:28:00.380Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "b8d8041a-ef98-4def-81ac-29eb3b74cfa0",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-99b62c2f-f803-4eed-854a-b911516fb720",
+      "mapName": "New Conversation",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-27T08:26:49.774Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}
