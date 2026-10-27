@@ -1,9 +1,9 @@
 {
   "version": "0.3",
   "kind": "app",
-  "generatedAt": "2026-10-27T08:26:49.775Z",
+  "generatedAt": "2026-10-27T14:50:40.962Z",
   "item": {
-    "title": "New Conversation"
+    "title": "Lake District Fells Symbology"
   },
   "map": {
     "type": "webmap",
@@ -20,13 +20,13 @@
     "layout": {
       "right": {
         "hidden": false,
-        "width": "340px",
-        "title": "Fell symbology",
+        "width": "330px",
+        "title": "Prominence colours",
         "collapsed": false,
         "blocks": [
           {
             "type": "customMount",
-            "id": "fell-color-controls",
+            "id": "prominence-ramp-controls",
             "title": "Colour ramp"
           }
         ]
@@ -34,21 +34,10 @@
     },
     "widgets": [
       {
-        "id": "default-home",
-        "type": "home",
-        "slot": "top-left",
-        "config": {}
-      },
-      {
-        "id": "default-scale-bar",
-        "type": "scaleBar",
-        "slot": "bottom-left",
-        "config": {}
-      },
-      {
-        "id": "default-legend",
+        "id": "fells-legend",
         "type": "legend",
         "slot": "bottom-left",
+        "title": "Fell symbols",
         "config": {}
       },
       {
@@ -67,33 +56,39 @@
     "interactions": [],
     "behaviors": [
       {
-        "id": "fell-color-ramp-control",
-        "label": "LakeDistrictFells colour ramp control",
-        "bundlePath": "./runtime/behaviors/fell-color-ramp-control-7d82fb2ef5fc4b2a.js",
-        "sourceSha256": "7d82fb2ef5fc4b2a6f97344082322b22d904fb375516bb8f20370d4459f41658",
+        "id": "prominence-ramp-controls",
+        "label": "Prominence colour-ramp selector",
+        "bundlePath": "./runtime/behaviors/prominence-ramp-controls-ee9202add8a6dc2d.js",
+        "sourceSha256": "ee9202add8a6dc2d3634fb739c96df4359c673e0a4c5e50fc794b73f16c08f97",
         "modulePaths": [],
         "config": {
-          "layerId": "1a17c7892fa-layer-2"
+          "layerId": "1a17dd81420-layer-2",
+          "heightField": "Metres",
+          "prominenceField": "Drop_",
+          "heightMin": 37,
+          "heightMax": 978.07,
+          "prominenceMin": 0,
+          "prominenceMax": 912.2
         },
         "mounts": [
-          "fell-color-controls"
+          "prominence-ramp-controls"
         ],
         "ownedLayerIds": [],
         "interactions": [],
-        "installedAt": "2026-10-27T08:28:00.380Z"
+        "installedAt": "2026-10-27T14:52:09.392Z"
       }
     ]
   },
   "nova": {
-    "basename": "b8d8041a-ef98-4def-81ac-29eb3b74cfa0",
+    "basename": "4a5e78e9-01b7-43a7-8b00-2ca450571da8",
     "presentationMode": "app",
     "ownedGraphicsLayerIds": [],
     "origin": {
       "portalUrl": "https://www.arcgis.com",
-      "mapId": "output-99b62c2f-f803-4eed-854a-b911516fb720",
+      "mapId": "output-e61186aa-a9ad-4867-bdd0-f67ec361467a",
       "mapName": "New Conversation",
       "viewMode": "2d",
-      "capturedAt": "2026-10-27T08:26:49.774Z"
+      "capturedAt": "2026-10-27T14:50:40.961Z"
     },
     "sourceSelection": {
       "mode": "all"

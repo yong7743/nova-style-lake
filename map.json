@@ -1,12 +1,11 @@
 {
   "operationalLayers": [
     {
-      "id": "1a17c7892fa-layer-2",
-      "title": "LakeDistrictFells",
-      "url": "https://services4.arcgis.com/QqwweGsWzDm98mss/arcgis/rest/services/LakeDistrictFells_AV/FeatureServer/0",
-      "itemId": "502b10c4eff5445693ab2bedf1f0bf5a",
+      "id": "1a17dd81420-layer-2",
+      "title": "Lake District Fells",
+      "url": "https://services4.arcgis.com/QqwweGsWzDm98mss/arcgis/rest/services/LakeDistrictFells_NP_2026/FeatureServer/0",
+      "itemId": "c039cff00fd446ce9b21acba1b11f484",
       "layerType": "ArcGISFeatureLayer",
-      "blendMode": "normal",
       "layerDefinition": {
         "drawingInfo": {
           "renderer": {
@@ -21,12 +20,12 @@
                 "stops": [
                   {
                     "label": "37 m",
-                    "size": 5,
+                    "size": 6,
                     "value": 37
                   },
                   {
                     "label": "978 m",
-                    "size": 28,
+                    "size": 30,
                     "value": 978.07
                   }
                 ]
@@ -50,6 +49,15 @@
                   },
                   {
                     "color": [
+                      247,
+                      247,
+                      247,
+                      255
+                    ],
+                    "value": 456.1
+                  },
+                  {
+                    "color": [
                       178,
                       24,
                       43,
@@ -64,9 +72,9 @@
             "symbol": {
               "type": "esriSMS",
               "color": [
-                127,
-                127,
-                127,
+                33,
+                102,
+                172,
                 255
               ],
               "angle": 0,
@@ -88,7 +96,8 @@
             }
           }
         }
-      }
+      },
+      "blendMode": "normal"
     }
   ],
   "baseMap": {
